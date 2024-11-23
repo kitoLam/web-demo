@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28.Travel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style/tour-list.css">
+</head>
+<body>
+    <section class="top-header">
+        <div class="container">
+            <div class="inner-wrap">
+                <div class="phone inner-it"><i class="fa-solid fa-phone"></i>0123.456.789</div>
+                <div class="email inner-it"><i class="fa-solid fa-envelope"></i>contact@28travel.com</div>
+                <address class="address inner-it"><i class="fa-solid fa-house"></i>Số 123, đường ABC, thành phố XYZ</address>
+            </div>
+        </div>
+    </section>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="inner-wrap">
+                <button class="alt-menu"><i class="fa-solid fa-bars"></i></button>
+                <div class="logo"><a href="index.html"><img src="images/Logo.png" alt="28.travel"></a></div>
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#" class="trang-chu">Trang Chủ</a></li>
+                        <li>
+                            <a href="#" class="local">
+                                    Tour Trong Nước
+                                    <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                            <ul class="detail">
+                                <li><a href="#">Tour Mien Bac</a></li>
+                                <li><a href="#">Tour Mien Trung</a></li>
+                                <li><a href="#">Tour Mien Nam</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="foreign">
+                                Tour Nước Ngoài <i class="fa-solid fa-caret-down"></i>
+                            </a>
+                            <ul>
+                                <li><a href="#">Tour Chau A</a></li>
+                                <li><a href="#">Tour Chau Au</a></li>
+                                <li><a href="#">Tour Chau My</a></li>
+                                <li><a href="#">Tour Chau Uc</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">Tin Tuc</a></li>
+                        <li><a href="#">Lien He</a></li>
+                    </ul>
+                </nav>
+                <div class="inner-card">
+                    <a href="#" class="gio-hang"><i class="fa-solid fa-cart-shopping"></i>
+                    <span>1</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+    <main>
+        <div class="section-1">
+            <div class="cover">
+                <div class="container">
+                    <div class="inner-wrap">
+                        <div class="content">
+                            <h2>Tour Nước Ngoài</h2>
+                            <ul class="link">
+                                <li><a href="#">Trang Chu</a><i class="fa-solid fa-angles-right"></i></li>
+                                <li><a href="#">Tour Nuoc Ngoai</a><i class="fa-solid fa-angles-right"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/tour-list.jpg">
+        </div>
+        <!-- code section-2 -->
+        <div class="section-2">
+            <div class="container">
+                <div class="inner-wrap">
+                    <div class="selector">
+                        <div class="bo-loc">
+                            <p>Bo Loc</p>
+                            <i class="fa-solid fa-ghost"></i>
+                        </div>
+                        <form action="#" target="_blank">
+                            <div>
+                                <label id="location">Diem di</label>
+                                <br>
+                                <select id="location">
+                                    <option value="" selected>--Chon diem di--</option>
+                                    <option value="NT">Nha trang/option>
+                                    <option value="KG">Kien giang</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label id="destination">Diem den</label>
+                                <br>
+                                <select id="destination">
+                                    <option value="" selected>--Chon diem di--</option>
+                                    <option value="NT">Nha trang</option>
+                                    <option value="KG">Kien giang</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label id="start-day">Ngay Khoi Hanh</label>
+                                <br>
+                                <input class="khoi-hanh"  type="date" name="ngay-khoi-hanh" id="start-day">
+                            </div>
+                            <div class="so-luong">
+                                <label id="so-luong">So luong Hanh Khach</label>
+                                <br>
+                                <div>
+                                    <label id="old">Nguoi Lon:</label>
+                                    <input type="number" name="old" id="old" placeholder="0">
+                                </div>
+                                <div>
+                                    <label id="young">Nguoi Tre:</label>
+                                    <input type="number" name="young" id="young" placeholder="0">
+                                </div>
+                                <div>
+                                    <label id="baby">Em Be:</label>
+                                    <input type="number" name="baby" id="baby" placeholder="0">
+                                </div>
+                            </div>
+                            <div>
+                                <label id="muc-gia">Muc Gia</label>
+                                <select id="muc-gia">
+                                    <option value="" selected>--Chon muc gia--</option>
+                                    <option value="1">1000-5000</option>
+                                    <option value="2">5000-10000</option>
+                                </select>
+                            </div>
+                            <button>Ap Dung</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end code section-2 -->
+    </main>
+    <div class="container"><hr></div>
+    <footer>
+        <div class="container">
+            <div class="inner-wrap">
+                <p>© 2024 28Tech. All rights reserved.</p>
+                <img class="logo" src="images/Logo.png">
+                <div>
+                    <a href="#">Điều khoản dịch vụ</a>
+                    <a href="#">Chính sách bảo mật</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

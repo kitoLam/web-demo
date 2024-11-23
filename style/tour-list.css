@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Deca:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+:root{
+    --font-01: "Lora", serif;
+    --background: #4502C7; 
+    --text: #25282B;
+}
+body{
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+    font-family: "Lora", serif;
+}
+/* code container */
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1184px;
+}
+@media (max-width: 1198.99px){
+    .container{
+        width: 960px;
+    }
+}
+@media (max-width: 991.98px){
+    /* giong mobile */
+    .container{
+        width: 500px;
+    }
+}
+@media (max-width: 767.98px){
+    .container{
+        width: 540px;
+    }
+}
+@media (max-width: 574.98px){
+    .container{
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+/* end container */
+.inner-wrap {
+    font-family: var(--font-01);
+    /* display: flex;
+    align-items: center; */
+}
+/* code top-header section */
+.top-header{
+    background-color: var(--background);
+    padding: 10px 0;
+}
+.top-header .container{
+    height: 44px;
+}
+.top-header .inner-wrap{
+    display: flex;
+    align-items: center; 
+    gap: 5px 40px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.top-header .inner-wrap .inner-it{
+    color:  #FFFBEB;
+    font-weight: 400;
+    font-size: 14px;
+    display: inline-flex;
+    justify-content: center;
+    gap: 8px;
+}
+.top-header .inner-wrap .inner-it i{
+    font-size: 20px;
+}
+@media (max-width: 767.98px){
+    .top-header{
+        display: none;
+    }
+}
+/* End top-header */
+
+/* Code header */
+.header{
+    background-color: #FFFFFF;
+    padding: 12px 0;
+}
+/* .header .container{
+    height: 50px;
+} */
+.header .inner-wrap{
+    
+    justify-content: space-between;
+    display: flex;
+    align-items: center; 
+}
+.header .inner-wrap .logo{
+    height: 50px;
+    /* Nay nguoi ta de logo nay, mai ngta de logo khac */
+    width: auto;
+}
+.header .inner-wrap .logo .img{
+    display: block;
+    object-fit: cover;
+}
+.header .inner-wrap .menu{
+    flex: 1;
+}
+.header .inner-wrap .menu > ul{
+    /* do mac dinh ul co padding, margin */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    list-style-type: none;
+}
+.header .inner-wrap .menu > ul > li > a{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    color: #25282B;
+    text-transform: capitalize;
+}
+.header .inner-wrap .menu > ul > li{
+    position: relative;
+}
+.header .inner-wrap .menu > ul > li > ul{
+    display: none;
+}
+.header .inner-wrap .menu > ul > li:hover > ul{
+    padding: 0;
+    margin: 0;
+    padding: 8px 0;
+    top: 100%;
+    left: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    border-radius: 0 0 10px 10px;
+    background-color: #FFFBEB;
+    z-index: 999;
+    width: 280px;
+}
+
+.header .inner-wrap .menu > ul li > ul > li > a{
+    text-decoration: none;
+    display: block;
+    font-weight: 400;
+    text-transform: capitalize;
+    padding: 8px 22px;
+    font-size: 16px;
+    color: var(--background);
+
+}
+.header .inner-wrap .menu > ul li:hover ul li a:hover{
+    background-color: #4502C7;
+    color: #FFFFFF;
+}
+.header .inner-wrap .menu ul li a.trang-chu{
+    color: var(--background);
+}
+.header .inner-wrap .menu > ul a:hover{
+    color: #4502C7;
+}
+.header .inner-card a{
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .alt-menu{
+    display: none;
+}
+.header .inner-card span{
+    background-color: orangered;
+    display: inline-block;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 400;
+    color: white;
+    padding: 1px 5px;
+    position: relative;
+    margin-left: 3px;
+}
+.header .inner-card span::before{
+    /* khi sd before hay after phai co nd ke ca rong */
+    content: "";
+    display: inline-block;
+    width: 0; 
+    height: 0; 
+    border-top: 1.8px solid transparent;
+    border-bottom: 1.8 solid transparent; 
+    border-right: 3.7px solid orangered; 
+    position: absolute;
+    top: 5px;
+    left: -3.6px;
+}
+.header .inner-wrap .gio-hang i{
+    color: var(--background);
+    font-size: 20px;
+}
+.header .inner-wrap .gio-hang i:hover{
+    color: blue;
+}
+
+@media(max-width: 1198.98px){
+    .header .menu > ul{
+        gap: 5px 24px;
+    }
+}
+@media(max-width: 991.98px){
+    .header .menu{
+        display: none;
+    }
+    .header .alt-menu{
+        display: inline-block;
+        cursor: pointer;
+        border: 0;
+        background-color: transparent;
+        color: var(--text);
+        padding: 0;
+    }
+    .header .alt-menu i{
+        font-size: 22px;
+    }
+}
+/* End header */
+
+/* Code section-1 */
+.section-1 {
+    height: 253px;
+    position: relative;
+    margin-bottom: 30px;
+}
+.section-1 img{
+    width: 100%;
+    height: 100%;
+}
+.section-1 .container{
+    position: relative;
+}
+.section-1 .cover{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(69, 2, 199, 0.8) 100%);
+    width:100%;
+    height: 100%;
+    position: absolute;
+}
+.section-1 .container .content{
+    position: absolute;
+    top: 157px;
+}
+.section-1 .container .content h2{
+    font-size: 32px;
+    margin: 0;
+    color: white;
+    font-weight: 500;
+}
+.section-1 .container .content ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    color: white;
+}
+.section-1 .container .content ul li a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+.section-1 .container .content ul li i{
+    display: inline-block;
+    align-items: center;
+}
+.section-1 .container .content ul li a:hover{
+    color: var(--background);
+}
+.section-1 .container .content ul li:last-child i{
+    display: none;
+}
+/* end Code section-1 */
+
+/* code section-2 */
+.section-2{
+    color: #898B8D;
+    background-color: white;
+}
+.section-2 .selector{
+    width: 279px;
+    border: 2px solid grey;
+    padding: 15px;
+    border-radius: 10px;
+}
+.section-2 .selector .bo-loc{
+    display: flex;
+    justify-content: space-between;
+    color: var(--background);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.section-2 .selector .bo-loc p{
+    margin: 0;
+    font-weight: 500;
+}
+.section-2 .selector form{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.section-2 .selector form .khoi-hanh, select{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.section-2 .selector form .so-luong > div{
+    border: 2px solid grey;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+    height: 40px;
+    padding: 5px;
+    align-items: center;
+    border-radius: 5px;
+}
+.section-2 .selector form .so-luong > div label{
+    flex: 1;
+}
+.section-2 .selector form .so-luong > div input{
+    width: 40px;
+    border: 0;
+    outline: none;
+}
+.section-2 .selector form button{
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--background);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+/* end code section-2 */
+
+/* footer */
+footer {
+    padding: 10px;
+}
+footer .inner-wrap{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
+    color: #667479;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+footer .inner-wrap > div{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+footer .inner-wrap > div a{
+    text-decoration: none;
+    color: #667479;
+    font-size: 13px;
+    font-weight: 500;
+}
+@media(max-width:991.98px){
+    footer .inner-wrap{
+        flex-direction: column;
+        gap: 10px;
+    }
+    footer .inner-wrap p{
+        order: 3;
+    }
+}
+/* End footer */
